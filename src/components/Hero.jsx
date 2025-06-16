@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import AOS from 'aos';
 import jorgeImg from '../assets/jorge.jpg';
+import { useTranslation } from 'react-i18next';
 
 export default function Hero() {
     const phrases = [
@@ -8,6 +9,8 @@ export default function Hero() {
         'Experto en Java',
         'Arquitecto de Microservicios'
     ];
+    const { t } = useTranslation();
+
     const [text, setText] = useState('');
     const [pi, setPi] = useState(0);
     const [ci, setCi] = useState(0);
@@ -48,7 +51,7 @@ export default function Hero() {
             />
 
             <h2 className="text-4xl md:text-6xl font-bold mb-2 gradient-text" data-aos="fade-down">
-                Hola, soy Jorge Figueroa
+                {t('greeting')}
             </h2>
             <p className="text-lg md:text-xl mb-6 typing" id="typewriter" data-aos="fade-up">
                 {text}

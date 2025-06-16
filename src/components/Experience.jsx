@@ -1,21 +1,27 @@
 import { useEffect } from 'react';
 import AOS from 'aos';
+import amarisSvg from '../assets/amaris.svg';
+import kduLogo from '../assets/kduPng.png';
+import cibernosLogo from '../assets/cibernosLogo.png';
+import dsacLogo from '../assets/dsacLogo.png';
+import { useTranslation } from 'react-i18next';
 
 export default function Experience() {
+    const { t } = useTranslation();
     useEffect(() => {
         AOS.init({ duration: 1200, once: true });
     }, []);
 
     return (
         <section id="experience" className="bg-gray-900 bg-opacity-50 py-16 px-6" data-aos="fade-up">
-            <h3 className="text-3xl font-bold mb-8 gradient-text text-center">Experiencia Profesional</h3>
+            <h3 className="text-3xl font-bold mb-8 gradient-text text-center">{t('experience')}</h3>
             <div className="space-y-12 max-w-4xl mx-auto">
                 {/* Amaris */}
                 <div className="flex flex-col lg:flex-row items-center lg:space-x-8" data-aos="fade-right">
                     <img
-                        src="https://via.placeholder.com/600x300"
+                        src={amarisSvg}
                         alt="Amaris"
-                        className="rounded-xl shadow-lg mb-6 lg:mb-0 lg:w-1/3"
+                        className="h-24 rounded-xl shadow-lg mb-6 lg:mb-0 lg:w-1/3"
                     />
                     <div className="lg:w-2/3">
                         <h4 className="text-2xl font-semibold mb-2">
@@ -34,9 +40,9 @@ export default function Experience() {
                 {/* Cibernos */}
                 <div className="flex flex-col lg:flex-row-reverse items-center lg:space-x-8" data-aos="fade-left">
                     <img
-                        src="https://via.placeholder.com/600x300"
+                        src={cibernosLogo}
                         alt="Cibernos"
-                        className="rounded-xl shadow-lg mb-6 lg:mb-0 lg:w-1/3"
+                        className="h-24 rounded-xl shadow-lg mb-6 lg:mb-0 lg:w-1/3"
                     />
                     <div className="lg:w-2/3">
                         <h4 className="text-2xl font-semibold mb-2">
@@ -54,9 +60,9 @@ export default function Experience() {
                 {/* KDU */}
                 <div className="flex flex-col lg:flex-row items-center lg:space-x-8" data-aos="fade-right">
                     <img
-                        src="https://via.placeholder.com/600x300"
+                        src={kduLogo}
                         alt="KDU"
-                        className="rounded-xl shadow-lg mb-6 lg:mb-0 lg:w-1/3"
+                        className="h-24 rounded-xl shadow-lg mb-6 lg:mb-0 lg:w-1/3"
                     />
                     <div className="lg:w-2/3">
                         <h4 className="text-2xl font-semibold mb-2">
@@ -73,9 +79,9 @@ export default function Experience() {
                 {/* DSAC */}
                 <div className="flex flex-col lg:flex-row-reverse items-center lg:space-x-8" data-aos="fade-left">
                     <img
-                        src="https://via.placeholder.com/600x300"
+                        src={dsacLogo}
                         alt="DSAC"
-                        className="rounded-xl shadow-lg mb-6 lg:mb-0 lg:w-1/3"
+                        className="h-24 rounded-xl shadow-lg mb-6 lg:mb-0 lg:w-1/3"
                     />
                     
                     <div className="lg:w-2/3">
