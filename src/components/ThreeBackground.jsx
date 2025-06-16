@@ -17,7 +17,6 @@ export default function ThreeBackground() {
             const renderer = new THREE.WebGLRenderer({ canvas, alpha: true });
             renderer.setSize(window.innerWidth, window.innerHeight);
 
-            // Geometría de ejemplo (Torus Knot) - reemplaza si quieres otro
             const geometry = new THREE.TorusKnotGeometry(10, 3, 100, 16);
             const material = new THREE.MeshBasicMaterial({ color: 0x0071b3, wireframe: true });
             const knot = new THREE.Mesh(geometry, material);

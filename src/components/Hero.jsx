@@ -4,12 +4,8 @@ import jorgeImg from '../assets/jorge.jpg';
 import { useTranslation } from 'react-i18next';
 
 export default function Hero() {
-    const phrases = [
-        'Senior Software Engineer',
-        'Experto en Java',
-        'Arquitecto de Microservicios'
-    ];
     const { t } = useTranslation();
+    const phrases = t('phrases', { returnObjects: true });
 
     const [text, setText] = useState('');
     const [pi, setPi] = useState(0);
@@ -45,7 +41,7 @@ export default function Hero() {
             className="min-h-screen flex flex-col justify-center items-center text-center px-6">
             <img
                 src={jorgeImg}
-                alt="Foto Jorge"
+                alt="Jorge"
                 className="rounded-full shadow-lg w-48 h-48 mb-6 object-cover"
                 data-aos="zoom-in"
             />
@@ -61,13 +57,13 @@ export default function Hero() {
                     href="#experience"
                     className="px-6 py-3 border-2 border-gradient-to-r from-green-400 to-purple-600 font-semibold rounded-full hover:scale-105 transition"
                 >
-                    Ver Experiencia
+                    {t('seeExperience')}
                 </a>
                 <a
                     href="#contact"
                     className="px-6 py-3 bg-gradient-to-r from-green-400 to-purple-600 font-semibold rounded-full hover:scale-105 transition"
                 >
-                    Contáctame
+                    {t('contactMe')}
                 </a>
             </div>
         </section>

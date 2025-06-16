@@ -25,14 +25,14 @@ export default function Experience() {
                     />
                     <div className="lg:w-2/3">
                         <h4 className="text-2xl font-semibold mb-2">
-                            Software Engineer - (Sep 2023 – Presente)
+                            {t('titleAmaris')}
                         </h4>
                         <ul className="list-disc list-inside text-gray-300">
-                            <li>Arquitectura de microservicios con Spring Boot, Java 21 y arquitectura hexagonal.</li>
-                            <li>API REST, patrones Facade, Adapter, Observador.</li>
-                            <li>CI/CD con Azure DevOps, Docker y Kubernetes.</li>
-                            <li>TDD con JUnit, Mockito y Karate.</li>
-                            <li>Mensajería con Kafka y DDD.</li>
+                            <li>{t('subAmaris1')}</li>
+                            <li>{t('subAmaris2')}</li>
+                            <li>{t('subAmaris3')}</li>
+                            <li>{t('subAmaris4')}</li>
+                            <li>{t('subAmaris5')}</li>
                         </ul>
                     </div>
                 </div>
@@ -46,13 +46,13 @@ export default function Experience() {
                     />
                     <div className="lg:w-2/3">
                         <h4 className="text-2xl font-semibold mb-2">
-                            FullStack Developer - (May 2023 – Ago 2023)
+                            {t('titleCibernos')}
                         </h4>
                         <ul className="list-disc list-inside text-gray-300">
-                            <li>Java FX, JDK 11 para app escritorio.</li>
-                            <li>Microservicios Spring Boot, Java 11.</li>
-                            <li>Frontend con React, Hooks y Redux; pruebas con Jest.</li>
-                            <li>Scrum y Kanban.</li>
+                            <li>{t('subCibernos1')}</li>
+                            <li>{t('subCibernos2')}</li>
+                            <li>{t('subCibernos3')}</li>
+                            <li>{t('subCibernos4')}</li>
                         </ul>
                     </div>
                 </div>
@@ -66,12 +66,12 @@ export default function Experience() {
                     />
                     <div className="lg:w-2/3">
                         <h4 className="text-2xl font-semibold mb-2">
-                            DevOps - (Sep 2022 – Jun 2024)
+                            {t('titleKDU')}
                         </h4>
                         <ul className="list-disc list-inside text-gray-300">
-                            <li>Desarrollo de apps de pago Webpay y OnePay en Spring, Java.</li>
-                            <li>APIs REST/SOAP, Jenkins, SonarQube, RabbitMQ.</li>
-                            <li>Frontend con Angular y TypeScript.</li>
+                            <li>{t('subKdu1')}</li>
+                            <li>{t('subKdu2')}</li>
+                            <li>{t('subKdu3')}</li>
                         </ul>
                     </div>
                 </div>
@@ -86,11 +86,11 @@ export default function Experience() {
                     
                     <div className="lg:w-2/3">
                         <h4 className="text-2xl font-semibold mb-2">
-                            FullStack Developer - (Nov 2019 – Ago 2022)
+                            {t('titleDSAC')}
                         </h4>
                         <ul className="list-disc list-inside text-gray-300">
-                            <li>Sistemas para MINEDUC y Banco Security con Spring Boot, Angular, AWS.</li>
-                            <li>TDD, Docker, Kafka, PostgreSQL.</li>
+                            <li>{t('subDsac1')}</li>
+                            <li>{t('subDsac2')}</li>
                         </ul>
                     </div>
                 </div>

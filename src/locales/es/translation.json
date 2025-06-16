@@ -1,4 +1,59 @@
 {
+  "name": "Jorge Figueroa",
+  "start": "Inicio",
+  "titleExperience": "Experience",
+  "education": "Educación",
+  "skills": "Skills",
   "greeting": "Hola, me llamo Jorge",
-  "experience": "Experiencia Profesional"
+  "experience": "Experiencia Profesional",
+  "phrases": [
+    "Ingeniero de Software Senior",
+    "Experto en Java",
+    "Arquitecto de Microservicios"
+  ],
+  "seeExperience": "Ver Experiencia",
+  "contactMe": "Contáctame",
+  "titleAboutMe": "Sobre mí",
+  "aboutMe": "Senior Software Engineer con más de 12 años de experiencia en Banca, Gobierno y Seguros. Enfocado en código de calidad, patrones de diseño y buenas prácticas, he liderado proyectos desde cero, mejorado aplicaciones existentes y creado nuevas funcionalidades.",
+  "aboutMeDegrees": "Graduado de Ingeniería en Computación e Informática y Máster en Seguridad de la Información y Ciberseguridad.",
+  "contact": "Contacto",
+  "country": "Madrid, España",
+  "sendEmail": "Enviar Email",
+  "titleEducation": "Educación y Certificaciones",
+  "educationMaster": "Máster en Seguridad de la Información y Ciberseguridad, USACH (2020)",
+  "educationTituleDegree": "Ingeniería en Computación e Informática, Universidad Mayor (2012)",
+  "educationCertification": "Certificaciones: DevOps Essentials (2021), Scrum Master (2018), Inglés B1 (2013)",
+  "titleAmaris": "Software Engineer - (Sep 2023 – Presente)",
+  "subAmaris1": "Arquitectura de microservicios con Spring Boot, Java 21 y arquitectura hexagonal.",
+  "subAmaris2": "API REST, patrones Facade, Adapter, Observador, entre otros.",
+  "subAmaris3": "CI/CD con Azure DevOps, Docker y Kubernetes.",
+  "subAmaris4": "TDD con JUnit, Mockito y Karate.",
+  "subAmaris5": "Mensajería con Kafka y DDD.",
+  "titleCibernos": "FullStack Developer - (May 2023 – Ago 2023)",
+  "subCibernos1": "Java FX, JDK 11 para app escritorio.",
+  "subCibernos2": "Microservicios Spring Boot, Java 11.",
+  "subCibernos3": "Frontend con React, Hooks y Redux; pruebas con Jest.",
+  "subCibernos4": "Scrum y Kanban.",
+  "titleKDU": "DevOps - (Sep 2022 – Jun 2024)",
+  "subKdu1": "Desarrollo de apps de pago Webpay y OnePay en Spring, Java.",
+  "subKdu2": "APIs REST/SOAP, Jenkins, SonarQube, RabbitMQ.",
+  "subKdu3": "Frontend con Angular y TypeScript.",
+  "titleDSAC": "FullStack Developer - (Nov 2019 – Ago 2022)",
+  "subDsac1": "Sistemas para MINEDUC y Banco Security con Spring Boot, Angular, AWS.",
+  "subDsac2": "TDD, Docker, Kafka, PostgreSQL.",
+  "titleSkills": "Skills Adicionales",
+  "subSkills1": "Spring Boot, Hibernate, API REST/SOAP",
+  "subSkills2": "AWS, Azure, Docker, Kubernetes",
+  "subSkills3": "MySQL, PostgreSQL, MongoDB, Cassandra",
+  "subSkills4": "Angular, React, TypeScript, JavaScript",
+  "subSkills5": "CI/CD (Jenkins, Azure DevOps), SonarQube",
+  "subSkills6": "Seguridad, DDD, TDD, SOLID"
+
+
+
+
+
+
+
+
 }

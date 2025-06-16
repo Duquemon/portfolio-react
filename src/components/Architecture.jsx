@@ -7,45 +7,51 @@ export default function Architecture() {
     }, []);
 
     return (
-        <section id="architecture" className="py-20 px-6 relative">
-            <h3 className="text-3xl font-bold mb-12 gradient-text text-center" data-aos="fade-up">
-                Arquitectura de Microservicios
+        <section id="architecture" className="py-24 px-6 bg-gradient-to-br from-gray-900 to-black text-white relative overflow-hidden">
+            <h3 className="text-4xl font-extrabold text-center mb-16 gradient-text" data-aos="zoom-in">
+                Arquitectura de Microservicios Moderna
             </h3>
+
             <div className="container mx-auto flex flex-col items-center space-y-12">
-                {/* Node 1 */}
-                <div className="diagram-node" data-aos="fade-up" data-aos-delay="100">
-                    Cliente Web / Móvil
-                </div>
-                <div className="diagram-line h-12" data-aos="fade-up" data-aos-delay="200"></div>
-
-                {/* Node 2 */}
-                <div className="diagram-node" data-aos="fade-up" data-aos-delay="300">
-                    API Gateway
-                </div>
-                <div className="diagram-line h-12" data-aos="fade-up" data-aos-delay="400"></div>
-
-                {/* Node 3 Row */}
-                <div className="flex flex-col lg:flex-row lg:space-x-8 items-center">
-                    <div className="diagram-node mb-6 lg:mb-0" data-aos="fade-up" data-aos-delay="500">
-                        Auth Service
+                <div className="relative z-10 text-center" data-aos="fade-up">
+                    <div className="rounded-xl border border-green-400 px-6 py-4 bg-black bg-opacity-40 backdrop-blur-sm shadow-xl">
+                        <span className="text-lg font-semibold tracking-wide">🌐 Cliente Web / Móvil</span>
                     </div>
-                    <div className="w-8 h-1 bg-[#00ffa3] mb-6 lg:mb-0" data-aos="fade-up" data-aos-delay="600"></div>
-                    <div className="diagram-node mb-6 lg:mb-0" data-aos="fade-up" data-aos-delay="700">
-                        Order Service
-                    </div>
-                    <div className="w-8 h-1 bg-[#00ffa3] mb-6 lg:mb-0" data-aos="fade-up" data-aos-delay="800"></div>
-                    <div className="diagram-node" data-aos="fade-up" data-aos-delay="900">
-                        Payment Service
-                    </div>
+                    <div className="h-8 w-1 bg-green-400 mx-auto mt-2 animate-pulse"></div>
                 </div>
 
-                <div className="diagram-line h-12" data-aos="fade-up" data-aos-delay="1000"></div>
+                <div className="relative z-10 text-center" data-aos="fade-up" data-aos-delay="100">
+                    <div className="rounded-xl border border-purple-500 px-6 py-4 bg-black bg-opacity-40 backdrop-blur-sm shadow-xl">
+                        <span className="text-lg font-semibold tracking-wide">🛡️ API Gateway</span>
+                    </div>
+                    <div className="h-8 w-1 bg-purple-500 mx-auto mt-2 animate-pulse"></div>
+                </div>
 
-                {/* Node 4 */}
-                <div className="diagram-node" data-aos="fade-up" data-aos-delay="1100">
-                    Base de Datos Distribuida
+                <div className="flex flex-wrap justify-center gap-6" data-aos="fade-up" data-aos-delay="200">
+                    {[
+                        { label: '🔐 Auth Service', color: 'border-yellow-400' },
+                        { label: '📦 Order Service', color: 'border-pink-400' },
+                        { label: '💳 Payment Service', color: 'border-blue-400' },
+                        { label: '📊 Analytics Service', color: 'border-cyan-400' }
+                    ].map((service, i) => (
+                        <div
+                            key={i}
+                            className={`rounded-xl ${service.color} border px-6 py-4 bg-black bg-opacity-30 shadow-lg hover:scale-105 transition transform duration-300`}
+                        >
+                            <span className="text-lg font-medium">{service.label}</span>
+                        </div>
+                    ))}
+                </div>
+
+                <div className="relative z-10 text-center mt-10" data-aos="fade-up" data-aos-delay="300">
+                    <div className="h-8 w-1 bg-cyan-400 mx-auto mb-2 animate-pulse"></div>
+                    <div className="rounded-xl border border-cyan-400 px-6 py-4 bg-black bg-opacity-40 backdrop-blur-sm shadow-xl">
+                        <span className="text-lg font-semibold tracking-wide">🧬 Base de Datos Distribuida</span>
+                    </div>
                 </div>
             </div>
+
+            <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-[2px] h-full bg-gradient-to-b from-green-400 via-transparent to-transparent opacity-30 pointer-events-none animate-pulse"></div>
         </section>
     );
 }

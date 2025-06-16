@@ -1,8 +1,10 @@
 import {useEffect, useState} from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { useTranslation } from 'react-i18next';
 
 export default function Navbar() {
+    const { t } = useTranslation();
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     useEffect(() => {
@@ -18,38 +20,38 @@ export default function Navbar() {
             data-aos="fade-down">
             <div className="container mx-auto flex justify-between items-center py-4 px-6">
                 <h1 className="text-2xl font-bold gradient-text">
-                    Jorge Figueroa Aqueveque
+                    {t('name')}
                 </h1>
                 <nav>
                     <ul className="hidden md:flex space-x-8 text-lg">
                         <li>
                             <a href="#hero" className="nav-link">
-                                Inicio
+                                {t('start')}
                             </a>
                         </li>
                         <li>
                             <a href="#about" className="nav-link">
-                                Sobre mí
+                                {t('titleAboutMe')}
                             </a>
                         </li>
                         <li>
                             <a href="#experience" className="nav-link">
-                                Experiencia
+                                {t('titleExperience')}
                             </a>
                         </li>
                         <li>
                             <a href="#education" className="nav-link">
-                                Educación
+                                {t('education')}
                             </a>
                         </li>
                         <li>
                             <a href="#skills" className="nav-link">
-                                Skills
+                                {t('skills')}
                             </a>
                         </li>
                         <li>
                             <a href="#contact" className="nav-link">
-                                Contacto
+                                {t('contact')}
                             </a>
                         </li>
                     </ul>
@@ -68,42 +70,42 @@ export default function Navbar() {
                         <a href="#hero"
                             className="nav-link"
                             onClick={() => setIsMenuOpen(false)} >
-                            Inicio
+                            {t('start')}
                         </a>
                     </li>
                     <li>
                         <a href="#about"
                             className="nav-link"
                             onClick={() => setIsMenuOpen(false)} >
-                            Sobre mí
+                            {t('titleAboutMe')}
                         </a>
                     </li>
                     <li>
                         <a href="#experience"
                             className="nav-link"
                             onClick={() => setIsMenuOpen(false)} >
-                            Experiencia
+                            {t('titleExperience')}
                         </a>
                     </li>
                     <li>
                         <a href="#education"
                             className="nav-link"
                             onClick={() => setIsMenuOpen(false)} >
-                            Educación
+                            {t('education')}
                         </a>
                     </li>
                     <li>
                         <a href="#skills"
                             className="nav-link"
                             onClick={() => setIsMenuOpen(false)} >
-                            Skills
+                            {t('skills')}
                         </a>
                     </li>
                     <li>
                         <a href="#contact"
                             className="nav-link"
                             onClick={() => setIsMenuOpen(false)} >
-                            Contacto
+                            {t('contact')}
                         </a>
                     </li>
                 </ul>
